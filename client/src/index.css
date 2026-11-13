@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen;
+    background-image: 
+      radial-gradient(at 10% 20%, rgba(20, 30, 60, 0.4) 0px, transparent 50%),
+      radial-gradient(at 90% 80%, rgba(30, 20, 60, 0.3) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(10, 15, 30, 0.8) 0px, transparent 100%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
